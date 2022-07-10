@@ -1,0 +1,16 @@
+1254. Number of Closed Islands(Medium, Finished: 2)
+Solution: Use dfs to destory the corner island at first, then the same step as No.200
+
+Thinking: What is the time complexity and space complexity of this algorithm? 
+
+Answer: for the mxn matrix, the time complexity should be O(mxn) since it will go over each element 
+and the space complexity should also be O(mxn)
+In traversing the tree the space complexity should be o(h) where h represents the max height of the tree
+
+1905. Count Sub Islands(Medium, Finished: 1)
+Solution: Find the case that which kind of islands should not be sub island, then same as No.200
+
+695. Max Area of Island(Medium, Finished: 1)
+Solution: the key is to return the area of the island, set the return value of recursive funtion 
+base case: return 0  else reutrn dfs + dfs + dfs + dfs + 1(上下左右中间就是岛屿面积) res = Math.max(res, dfs())更新数据
+
